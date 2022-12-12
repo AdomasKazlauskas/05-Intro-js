@@ -80,6 +80,6 @@ abcString += abc[1] + separator;
 abcString += abc[2] + separator;
 abcString += abc[3] + separator;
 abcString += abc[4] + separator;
-abcString += abc[5] + '. ';
+abcString += abc[5] + ending;
 
 console.log(abcString);
