@@ -6,6 +6,10 @@
     visi: >, <, <=, >=, ==, !=, ===, !==
     nenaudotini: ==, !=
 
+    LOGINIAI OPERATORIAI:
+    && - AND - turi tenkinti visas salygas
+    || - or - bent vienas
+
     SABLONAI:
     if () {}
     if () {} else {}
@@ -60,3 +64,63 @@ if (petras.length > maryte.length) {
     console.log('Petras turi maziau pazymiu uz maryte');
 }
 
+if (NaN === NaN) {
+    console.log('NaN lygus');
+} else {
+    console.log('NaN nelygus');
+}
+
+console.clear();
+
+//code nesting
+
+const day = 5;
+
+if (day === 1) {
+    console.log('Pirmadienis');
+    } else {
+        if (day === 2) {
+            console.log('Antradienis')
+        } else {
+            if (day === 3) {
+                console.log('Treciadienis');
+            } else {
+                if (day === 4) {
+                    console.log('Ketvirtadienis');
+                } else {
+                    if (day === 5) {
+                        console.log('Penktadienis');
+                    }
+                }
+        }
+    }
+}
+
+//Atrakcionu parkas
+
+const parkasDirba = true;
+const bijauAukscio = false;
+
+if (parkasDirba) {
+    if (bijauAukscio) {
+        console.log('baisu');
+    } else {
+        console.log('Einu i parka, bus smagu');
+    }
+} else {
+    if (bijauAukscio) {
+        console.log('Parkas nedirba - man sekasi.');
+    } else {
+        console.log('liudna baisiausiai');
+    }
+}
+
+if (parkasDirba && bijauAukscio) {
+    console.log('Baisu man');
+} else if (parkasDirba && !bijauAukscio) {
+    console.log('Einu i parka bus smagu');
+} else if (!parkasDirba && bijauAukscio) {
+    console.log('Pasiseke');
+} else if (!parkasDirba && !bijauAukscio) {
+    console.log('gaila, norejau i parka');
+} 
