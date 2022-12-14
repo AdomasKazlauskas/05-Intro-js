@@ -35,6 +35,7 @@ console.log('Marytes vidurkis:', sum2 / count2);
 
 
 
+console.log('-----------');
 
 function marksAverage(marksArray) {
     let sum = 0;
@@ -71,32 +72,6 @@ console.log(`${student2.name} pazymiu vidurkis yra ${vidurkis2}.`);
 console.log(`${student3.name} pazymiu vidurkis yra ${vidurkis3}.`);
 
 console.log('-----------');
-
-const currency = 'EUR';
-const prekes = [
-    {
-        name: 'Bananas',
-        price: 2,
-        inStock: 10,
-    },
-    {
-        name: 'Agurkas',
-        price: 3,
-        inStock: 10,
-    },
-    {
-        name: 'Pomidoras',
-        price: 1.57,
-        inStock: 30,
-    },
-];
-
-function shop() {
-
-
-}
-
-shop(prekes, valiuta);
 
 console.log('MUSU PARDUOTUVE:');
 console.log('-----------------');
